@@ -23,7 +23,6 @@ public class AndroidActions {
     }
 
     public void scrollToText(String text){
-        // todo Скролл до текста не работает 78
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + text +"\"));"));
     }
 
